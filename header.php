@@ -1,3 +1,6 @@
+<?php
+	require('./database.php');
+?>
 <header class="theme-main-header">
 	
 				<div class="container">

@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/rezultati.css">
 
   </head>
-  <body style="background-image: url('images/wp3.jpg'); background-size:cover;background-repeat:no-repeat; background-color:black;">
+  <body style="background-image: url('images/wp3.jpg'); background-size:cover;background-repeat:no-repeat; background-color:black; margin-bottom: 10vh;">
 
             <?php
                 include('./header.php');
@@ -45,7 +45,7 @@
 
             </div>
 
-<div class="bracketi" style="margin:0 auto; background-color:white; width:60%; opacity:0.7; height:auto; margin-bottom: 10vh;">
+<div class="bracketi" style="margin:0 auto; background-color:transparent; width:60%; opacity:0.7; height:auto;">
 <main id="tournament">
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
