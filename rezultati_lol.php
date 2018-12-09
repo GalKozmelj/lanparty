@@ -3,8 +3,34 @@
   <head>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
-    <meta charset="utf-8">
-    <title>LanParty 2019</title>
+            <meta charset="UTF-8">
+        <!-- For IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <!-- For Resposive Device -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>LanParty 2019</title>
+
+        <!-- Favicon -->
+        <!-- <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png"> -->
+
+
+        <!-- Main style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- responsive style sheet -->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+
+        <!-- Fix Internet Explorer ______________________________________-->
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="vendor/html5shiv.js"></script>
+            <script src="vendor/respond.js"></script>
+        <![endif]-->
+
     <link rel="stylesheet" href="css/rezultati.css">
 
   </head>
@@ -14,7 +40,12 @@
                 include('./header.php');
             ?>
 
-<div class="bracketi" style="margin:0 auto; background-color:white; width:60%; opacity:0.7; height:auto;">
+            <div style="padding-top: 100px;">
+                
+
+            </div>
+
+<div class="bracketi" style="margin:0 auto; background-color:white; width:60%; opacity:0.7; height:auto; margin-bottom: 10vh;">
 <main id="tournament">
     <ul class="round round-1">
         <li class="spacer">&nbsp;</li>

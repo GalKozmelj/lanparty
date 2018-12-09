@@ -19,7 +19,7 @@
 					       	<li class="active"><a href="#home">DOMOV</a></li>
 							<li><a href="prijave.php">Prijave</a></li>
 							<li><a href="stream.php">Stream</a></li>
-							<li><a href="rezultati.php">Rezultati</a></li>
+							<li><a href="rezultati_cs.php">Rezultati</a></li>
 							<li><a href="#team-section">Info</a></li>
 							<li><a href="#skill-section">Kontakt</a></li>
 
