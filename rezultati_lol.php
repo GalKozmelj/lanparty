@@ -48,9 +48,9 @@
 }
 
 .specjal{
-
   animation: rainbow 8s infinite !important; 
-
+  text-shadow: -0.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px gray;
+  background-color: #ddd;
 
 }
 
@@ -80,7 +80,7 @@
         <ul class="round round-1">
         <?php
         $team = 0;
-            $query = "SELECT * FROM ekipa";
+            $query = "SELECT * FROM ekipa WHERE game = 1";
             $result = mysqli_query($link, $query);
 
             foreach ($result as $row) {
@@ -117,13 +117,13 @@
         <ul class="round round-2">
         <?php
         $team = 0;
-            $query = "SELECT * FROM ekipa";
+            $query = "SELECT * FROM ekipa WHERE (id IN(SELECT team_id FROM round_two)) AND game = 1";
             $result = mysqli_query($link, $query);
 
             foreach ($result as $row) {
                 $team++;
 
-                if ($team == 2) {
+                if ($team == 1) {
                   
         ?>
                             
@@ -132,7 +132,7 @@
                                 <li class="game game-top winner"><?php echo $row['ime']; ?> <span>79</span></li>
                                 <li class="game game-spacer">&nbsp;</li>
          <?php
-                                }elseif ($team == 4) {
+                                }elseif ($team == 2) {
                                    ?>
 
                                 <li class="game game-bottom "><?php echo $row['ime']; ?> <span>48</span></li>
@@ -156,13 +156,13 @@
         <ul class="round round-3">
         <?php
         $team = 0;
-            $query = "SELECT * FROM ekipa";
+            $query = "SELECT * FROM ekipa WHERE (id IN(SELECT team_id FROM round_three)) AND game = 1";
             $result = mysqli_query($link, $query);
 
             foreach ($result as $row) {
                 $team++;
 
-                if ($team == 4) {
+                if ($team == 1) {
                   
         ?>
                             
@@ -171,7 +171,7 @@
                                 <li class="game game-top winner"><?php echo $row['ime']; ?> <span>79</span></li>
                                 <li class="game game-spacer">&nbsp;</li>
          <?php
-                                }elseif ($team == 6) {
+                                }elseif ($team == 2) {
                                    ?>
 
                                 <li class="game game-bottom "><?php echo $row['ime']; ?> <span>48</span></li>
@@ -190,13 +190,30 @@
 
 
 
-    <ul class="round round-4">
-        <li class="spacer">&nbsp;</li>
+     <!--
+    INSERT THE WINNER!
+     -->
 
-        <li class="game game-top winner specjal">Lousville <span>85</span></li>
+     
+        <ul class="round round-3">
+        <?php
+        $team = 0;
+            $query = "SELECT * FROM ekipa WHERE (id IN(SELECT team_id FROM winner)) AND game = 1";
+            $result = mysqli_query($link, $query);
 
-        <li class="spacer">&nbsp;</li>
-    </ul>
+            foreach ($result as $row) {
+                  
+        ?>
+                            
+                                <li class="spacer">&nbsp;</li>
+
+                                <li class="game game-top winner specjal"><?php echo $row['ime']; ?> <span>79</span></li>
+         <?php
+
+                    }
+                    
+
+        ?><li class="spacer">&nbsp;</li></ul>
 </main>
 
 
