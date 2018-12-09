@@ -39,18 +39,24 @@ li.game{
   li.game.winner{
     font-weight:bold;
   }
+
   li.game span{
     float:right;
     margin-right:5px;
   }
 
-  li.game-top{ border-bottom:1px solid #aaa; }
+  li.game-top{ border-bottom:1px solid #fff; }
 
   li.game-spacer{
-    border-right:1px solid #aaa;
+    border-right:1px solid #fff;
     min-height:40px;
   }
 
   li.game-bottom{
-    border-top:1px solid #aaa;
+    border-top:1px solid #fff;
+  }
+
+  li{
+    color: white;
+    border-color: #aaa;
   }

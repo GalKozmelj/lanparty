@@ -101,7 +101,7 @@ $query6 = "insert into igralci(ime,priimek,account_name,ekipa_id) values('$ime5'
 <p style="color:green">Uspesno ste prijavljeni!</p>
 
   <?php
-header('Refresh: 0; url=index.html?id=1');
+header('Refresh: 0; url=index.php?id=1');
 die();
 
 ?>
