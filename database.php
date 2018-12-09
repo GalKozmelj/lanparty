@@ -12,5 +12,4 @@ if (!$link) {
 }
 
 mysqli_query($link, "SET NAMES 'utf8'");
-$salt = 'dglkn349346$%dfh';
 ?>

@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-
-		<?php include 'database.php'; ?>
-
 		<meta charset="UTF-8">
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>LanParty 2019</title>
 
+		<!-- Favicon -->
+		<!-- <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png"> -->
+
+
 		<!-- Main style sheet -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
 
 		<!-- Fix Internet Explorer ______________________________________-->
@@ -29,71 +28,14 @@
 			<script src="vendor/html5shiv.js"></script>
 			<script src="vendor/respond.js"></script>
 		<![endif]-->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-<style>
-.prijava_btn{
-  width: 100%;
-  border: none;
 
-}
-.prijava_btn:hover{
-  color: #ccc;
-
-
-}
-input::placeholder{
-  color: #ccc;
-}
-input[type=text]{
-  border: none !important;
-  border-bottom: 1px #bbb solid !important;
-  padding: 2px;
-  margin: 5px;
-  margin-bottom: 0px;
-}
-table{
-    width: 100vh;
-}
-.pobarvanka:hover{
-    background-color: #d73e4d;
-    transition: background-color 0.2s linear;
-}
-.pobarvanka{
-    background-color: transparent;
-    transition: background-color 0.2s linear;
-}
-	input[type=text]:focus{
-
-			border-color: white !important;
-			border-width: 1.5px !important;
-		}
-
-		input:-webkit-autofill,
-		input:-webkit-autofill:hover,
-		input:-webkit-autofill:focus,
-		input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 0px transparent inset;
-}
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
-    -webkit-transition-delay: 9999s;
-}
-</style>
 	</head>
-
+			
 	<body>
 		<div class="main-page-wrapper">
 
 
 
-			<!--
-			=============================================
-				Theme Header
-			==============================================
-			-->
 			<?php
 				include_once('./header.php');
 			?>
@@ -113,7 +55,7 @@ input:-webkit-autofill:active {
 								<!-- SLIDE1  -->
 								<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-title="Title Goes Here" data-description="">
 									<!-- MAIN IMAGE -->
-									<img src="https://i.redd.it/7oxe2g7t0y411.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<img src="images/lol.jpg"  alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
 									<!-- LAYERS -->
 
 									<!-- LAYER NR. 1 -->
@@ -129,77 +71,12 @@ input:-webkit-autofill:active {
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="500"
+										data-start="1000"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on"
 										style="z-index: 6; white-space: nowrap;">
-
-                    <style media="screen">
-
-                      *{
-                        margin:0px;
-                        padding:0px;
-                        color: white;
-                      }
-                      input{
-                        background-color: rgba(0, 0, 0, 0);
-                        border:1px solid white;
-
-                      }
-
-                      .vrsta{
-                        padding: 10px;
-                      }
-
-                      h1{
-                        text-align: center;
-                        color: white;
-                      }
-
-                      .box{
-                        padding: 10px;
-                        text-align: center;
-                      }
-                    </style>
-
-
-
-                    <div class="box" style="margin-top:5%;margin-bottom:8%;">
-                      <div class="naslov" style="margin-top:5%;">
-                      <h1>CS:GO</h1>
-                      </div>
-										</div>
-
-                    <form class="forma" action="team_insert.php" method="post">
-                      <table border="0" style="text-align: center;">
-												<?php
-												if(isset($_GET['id'])){
-													if ($_GET['id'] == 2) {
-														?>
-														<tr> <td colspan="3" style="color: red; text-weight: bold;"> team name alredy taken </td></tr>
-														<?php
-														}
-
-													}
-												 ?>
-										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
-                      <hr>
-                    <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Account name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td> <p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime4" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek4" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td>	<p class="vrsta">Igralec st.5: <input type="text" name="player5" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime5" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek5" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr>	<input type="hidden" value="2" name="game_id"/>
-                    <tr> <td colspan="3"> <p> <input class="project-button hvr-bounce-to-right pobarvanka" type="submit" name="submit_btn" value="Prijavi"> </p> </td></tr>
-										</table>
-                    </form>
-
-
-
-
-
-
+										<h1 style="text-transform: none;">LanParty 2019,  Velenje</h1>
 									</div>
 
 									<!-- LAYER NR. 2 -->
@@ -211,15 +88,16 @@ input:-webkit-autofill:active {
 										data-whitespace="nowrap"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="2000"
+										data-start="1550"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on"
 										style="z-index: 6; white-space: nowrap;">
+										<h6>18.1.2019, 19.1.2019 Velenje</h6>
 									</div>
 
 
@@ -229,23 +107,16 @@ input:-webkit-autofill:active {
 										data-y="['middle','middle','middle','middle']" data-voffset="['52','52','125','80']"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:800;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="3000"
+										data-start="1750"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on">
-
-
-
-
-
-
-
+										<a href="prijave.php" class="project-button hvr-bounce-to-right">Prijavi se!</a>
 									</div>
-
 
 								</li>
 
@@ -324,9 +195,20 @@ input:-webkit-autofill:active {
 			<section id="about-us">
 				<div class="container">
 					<div class="theme-title">
-						<h2>O Prijavah</h2>
-            <p>prijave bodo odprte 1.Decembra in bodo potekale dokler se nebodo zapomnila vsa mesta za igralce!</p>
-					</div> <!-- /.theme-title -->
+						<h2>O dogodku</h2>
+						<p>Smo ekipa dijakov, ki pripravljamo dogodek LanParty, na katerem bomo igrali naslednji dve igri. Prvi dan bomo igrali <span style="color:red">CS:GO</span>(18.1.2019) in drugi dan bomo igrali
+							 <span style="color:red">League of Legends</span>(19.1.2019) Dogodek se bo odvijal oba dneva v dvorani Gaudeamus Velenje <b style="color:red">VSTOPNINE NI!</b></p>
+					</div><br> <br><br><!-- /.theme-title -->
+
+
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11013.693221025289!2d15.1146694!3d46.3609889!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85a3d687f234b6ee!2sRestavracija+Gaudeamus!5e0!3m2!1ssl!2ssi!4v1543836608439"
+					width="100%"
+					height="550"
+					frameborder="0"
+					style="border:0; margin-bottom: 100px;">
+				</iframe>
+
 
 
 				</div> <!-- /.container -->
