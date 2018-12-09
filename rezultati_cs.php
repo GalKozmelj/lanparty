@@ -10,7 +10,9 @@
   </head>
   <body style="background-image: url('images/wp3.jpg'); background-size:cover;background-repeat:no-repeat; background-color:black;">
 
-
+            <?php
+                include('./header.php');
+            ?>
 
 <div class="bracketi" style="margin:0 auto; background-color:white; width:60%; opacity:0.7; height:auto;">
 <main id="tournament">
