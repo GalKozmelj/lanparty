@@ -33,6 +33,30 @@
 
     <link rel="stylesheet" href="css/rezultati.css">
 
+
+
+
+<style type="text/css">
+    
+@keyframes rainbow{
+  0%{color: orange;}  
+  10%{color: purple;} 
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  100%{color: orange;}
+}
+
+.specjal{
+
+  animation: rainbow 8s infinite !important; 
+
+
+}
+
+</style>
+
+
   </head>
   <body style="background-image: url('images/wp3.jpg'); background-size:cover;background-repeat:no-repeat; background-color:black; margin-bottom: 10vh;">
 
@@ -47,6 +71,12 @@
 
 <div class="bracketi" style="margin:0 auto; background-color:transparent; width:60%; opacity:0.7; height:auto;">
 <main id="tournament">
+
+    <!--
+    INSERT THE FIRTS ROUND!
+     -->
+
+
         <ul class="round round-1">
         <?php
         $team = 0;
@@ -54,50 +84,116 @@
             $result = mysqli_query($link, $query);
 
             foreach ($result as $row) {
+                $team++;
+
+                if ($team == 1) {
+                  
         ?>
                             
                                 <li class="spacer">&nbsp;</li>
 
                                 <li class="game game-top winner"><?php echo $row['ime']; ?> <span>79</span></li>
                                 <li class="game game-spacer">&nbsp;</li>
-                                <li class="game game-bottom "><?php echo $row['ime']."2"; ?> <span>48</span></li>
-                            
-        <?php
-                            
+         <?php
+                                }elseif ($team == 2) {
+                                   ?>
+
+                                <li class="game game-bottom "><?php echo $row['ime']; ?> <span>48</span></li>
+         <?php
+
+                                   $team = 0;
+                                }   
+
                     }
                     
 
-        ?></ul>
+        ?><li class="spacer">&nbsp;</li></ul>
+
+    <!--
+    INSERT THE SECOND ROUND!
+     -->
+
+     
+        <ul class="round round-2">
+        <?php
+        $team = 0;
+            $query = "SELECT * FROM ekipa";
+            $result = mysqli_query($link, $query);
+
+            foreach ($result as $row) {
+                $team++;
+
+                if ($team == 2) {
+                  
+        ?>
+                            
+                                <li class="spacer">&nbsp;</li>
+
+                                <li class="game game-top winner"><?php echo $row['ime']; ?> <span>79</span></li>
+                                <li class="game game-spacer">&nbsp;</li>
+         <?php
+                                }elseif ($team == 4) {
+                                   ?>
+
+                                <li class="game game-bottom "><?php echo $row['ime']; ?> <span>48</span></li>
+         <?php
+
+                                   $team = 0;
+                                }   
+
+                    }
+                    
+
+        ?><li class="spacer">&nbsp;</li></ul>
+
+
+
+    <!--
+    INSERT THE THIRD ROUND!
+     -->
+
+     
+        <ul class="round round-3">
+        <?php
+        $team = 0;
+            $query = "SELECT * FROM ekipa";
+            $result = mysqli_query($link, $query);
+
+            foreach ($result as $row) {
+                $team++;
+
+                if ($team == 4) {
+                  
+        ?>
+                            
+                                <li class="spacer">&nbsp;</li>
+
+                                <li class="game game-top winner"><?php echo $row['ime']; ?> <span>79</span></li>
+                                <li class="game game-spacer">&nbsp;</li>
+         <?php
+                                }elseif ($team == 6) {
+                                   ?>
+
+                                <li class="game game-bottom "><?php echo $row['ime']; ?> <span>48</span></li>
+         <?php
+
+                                   $team = 0;
+                                }   
+
+                    }
+                    
+
+        ?><li class="spacer">&nbsp;</li></ul>
     
-    <ul class="round round-2">
-        <li class="spacer">&nbsp;</li>
+    
+    
 
-        <li class="game game-top winner">Lousville <span>82</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Colo St <span>56</span></li>
->
-    </ul>
-    <ul class="round round-3">
-        <li class="spacer">&nbsp;</li>
 
-        <li class="game game-top winner">Lousville <span>77</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Oregon <span>69</span></li>
 
-        <li class="spacer">&nbsp;</li>
-
-        <li class="game game-top ">Mich St <span>61</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">Duke <span>71</span></li>
-
-        <li class="spacer">&nbsp;</li>
-    </ul>
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
 
-        <li class="game game-top winner">Lousville <span>85</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Duke <span>63</span></li>
+        <li class="game game-top winner specjal">Lousville <span>85</span></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
