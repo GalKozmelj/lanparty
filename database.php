@@ -1,9 +1,9 @@
 <?php
 
 $server = 'localhost';
-$user = 'admin';
-$pass = 'admin';
-$db_name = 'lanparty';
+$user = 'musicn57_root';
+$pass = 'Admin123..';
+$db_name = 'musicn57_lanparty';
 
 $link = mysqli_connect($server, $user, $pass, $db_name);
 

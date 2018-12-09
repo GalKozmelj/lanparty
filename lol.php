@@ -30,7 +30,36 @@
 			<script src="vendor/respond.js"></script>
 		<![endif]-->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+<style>
+.prijava_btn{
+  width: 100%;
+  border: none;
 
+}
+.prijava_btn:hover{
+  color: #ccc;
+
+
+}
+input::placeholder{
+  color: #ccc;
+}
+input[type=text]{
+  border: none !important;
+  border-bottom: 1px #bbb solid !important;
+  padding: 2px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+.pobarvanka:hover{
+    background-color: #d73e4d;
+    transition: background-color 0.2s linear;
+}
+.pobarvanka{
+    background-color: transparent;
+    transition: background-color 0.2s linear;
+}
+</style>
 	</head>
 
 	<body>
@@ -88,7 +117,7 @@
 								<!-- SLIDE1  -->
 								<li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default"  data-title="Title Goes Here" data-description="">
 									<!-- MAIN IMAGE -->
-									<img src="images/wp3.jpg"  alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
+									<img src="images/wp3.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
 									<!-- LAYERS -->
 
 									<!-- LAYER NR. 1 -->
@@ -100,11 +129,11 @@
 										data-whitespace="nowrap"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1200;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="1000"
+										data-start="500"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on"
@@ -136,25 +165,60 @@
                         padding: 10px;
                         text-align: center;
                       }
+                      	input[type=text]:focus{
+
+			border-color: white !important;
+			border-width: 1.5px !important;
+		}
+
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 0px transparent inset;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
                     </style>
 
 
 
                     <div class="box" style="margin-top:5%;margin-bottom:8%;">
                       <div class="naslov" style="margin-top:5%;">
-                      <h1>League Of Legends</h1>
+                      <h1>League of Legends</h1>
                       </div>
 										</div>
 
                     <form class="forma" action="team_insert.php" method="post">
-											<p>Ime ekipe: <input type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
-                      <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Account name"> <input type="text" name="ime" value="" placeholder="Ime"> <input type="text" name="priimek" value="" placeholder="Priimek"> </p>
-											<p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Account name"> <input type="text" name="ime" value="" placeholder="Ime"> <input type="text" name="priimek" value="" placeholder="Priimek"> </p>
-											<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Account name"> <input type="text" name="ime" value="" placeholder="Ime"> <input type="text" name="priimek" value="" placeholder="Priimek"> </p>
-											<p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Account name"> <input type="text" name="ime" value="" placeholder="Ime"> <input type="text" name="priimek" value="" placeholder="Priimek"> </p>
-											<p class="vrsta">Igralec st.5: <input type="text" name="player5" value="" placeholder="Account name"> <input type="text" name="ime" value="" placeholder="Ime"> <input type="text" name="priimek" value="" placeholder="Priimek"> </p>
-                      <p> <input type="submit" name="submit_btn" value="Prijavi"> </p>
+                      <table border="0" style="text-align: center;">
+												<?php
+													if ($_GET['id'] == 2) {
+														?>
+														<tr> <td colspan="3" style="color: red; text-weight: bold;"> team name alredy taken </td></tr>
+														<?php
+														}
+
+
+												 ?>
+										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
+                      <hr>
+                    <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Account name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td> <p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime4" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek4" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td>	<p class="vrsta">Igralec st.5: <input type="text" name="player5" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime5" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek5" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr>	<input type="hidden" value="1" name="game_id"/>
+                    <tr> <td colspan="3"> <p> <input class="project-button hvr-bounce-to-right pobarvanka" type="submit" name="submit_btn" value="Prijavi"> </p> </td></tr>
+										</table>
                     </form>
+
+
+
 
 
 

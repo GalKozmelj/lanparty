@@ -10,7 +10,7 @@
 
 
     <iframe
-        src="https://player.twitch.tv/?channel=rush"
+        src="https://player.twitch.tv/?channel=dyrus"
         width="80%"
         height="750px"
         frameborder="none"
@@ -22,7 +22,7 @@
     <iframe frameborder="0"
         scrolling="no"
         id="chat_embed"
-        src="https://www.twitch.tv/embed/rush/chat"
+        src="https://www.twitch.tv/embed/dyrus/chat"
         height="750"
         width="20%"
         style="float:right;">

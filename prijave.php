@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+		
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -97,11 +97,11 @@
 										data-whitespace="nowrap"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1200;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="1000"
+										data-start="800"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on"
@@ -118,11 +118,11 @@
 										data-whitespace="nowrap"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:800;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="2000"
+										data-start="1500"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on"
@@ -137,11 +137,11 @@
 										data-y="['middle','middle','middle','middle']" data-voffset="['52','52','125','80']"
 										data-transform_idle="o:1;"
 
-										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+										data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:900;e:Power4.easeInOut;"
 										data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
 										data-mask_in="x:0px;y:[100%];"
 										data-mask_out="x:inherit;y:inherit;"
-										data-start="3000"
+										data-start="1800"
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on">
@@ -229,7 +229,7 @@
 				<div class="container">
 					<div class="theme-title">
 						<h2>O Prijavah</h2>
-            <p>prijave bodo odprte 1.Decembra in bodo potekale dokler se nebodo zapomnila vsa mesta za igralce!</p>
+            <p>Prijave bodo odprte 10. decembra in bodo odprte do zapolnitve vseh mest.</p>
 					</div> <!-- /.theme-title -->
 
 
