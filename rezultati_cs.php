@@ -69,9 +69,10 @@
                 
 
             </div>
-
+            
 <div class="bracketi" style="margin:0 auto; background-color:transparent; width:60%; opacity:0.7; height:auto;">
 <main id="tournament">
+
 
     <!--
     INSERT THE FIRTS ROUND!
