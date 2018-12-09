@@ -50,6 +50,7 @@
 .specjal{
   animation: rainbow 8s infinite !important; 
   text-shadow: -0.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px gray;
+  font-size: 15px;
   background-color: #ddd;
 
 }
