@@ -197,13 +197,14 @@ input:-webkit-autofill:active {
                     <form class="forma" action="team_insert.php" method="post">
                       <table border="0" style="text-align: center;">
 												<?php
+												if(isset($_GET['id'])){
 													if ($_GET['id'] == 2) {
 														?>
 														<tr> <td colspan="3" style="color: red; text-weight: bold;"> team name alredy taken </td></tr>
 														<?php
 														}
 
-
+													}
 												 ?>
 										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
                       <hr>
