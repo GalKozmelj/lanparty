@@ -1382,7 +1382,7 @@ footer p {
 .blog-details-page aside .sidebar-search-box input {
   width: 100%;
   height: 100%;
-  border:1px solid #dfdfdf;
+  border-bottom:1px solid #dfdfdf;
   padding: 0 67px 0 20px;
 }
 .blog-details-page aside .sidebar-search-box button {
