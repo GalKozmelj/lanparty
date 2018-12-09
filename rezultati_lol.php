@@ -56,7 +56,6 @@
 
 </style>
 
-
   </head>
   <body style="background-image: url('images/wp3.jpg'); background-size:cover;background-repeat:no-repeat; background-color:black; margin-bottom: 10vh;">
 
