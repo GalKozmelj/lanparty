@@ -31,7 +31,7 @@
 
 
 	</head>
-			
+
 	<body>
 		<div class="main-page-wrapper">
 
@@ -160,7 +160,6 @@
 										data-splitout="none"
 										data-responsive_offset="on"
 										style="z-index: 6; white-space: nowrap;">
-										<h6>Sub Head, Motto or Mission subtitle</h6>
 									</div>
 
 
