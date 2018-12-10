@@ -25,7 +25,7 @@
 							<li><a href="/stream.php">Stream</a></li>
 							<li><a href="/rezultati_cs.php">Rezultati-cs</a></li>
 							<li><a href="/rezultati_lol.php">Rezultati-lol</a></li>
-							<li><a href="/kontakt.php">Kontakt</a></li>
+							<li><a href="/kontakt.php">Kontakt/info</a></li>
 
 					   </div><!-- /.navbar-collapse -->
 					</nav> <!-- /.theme-feature-menu -->
