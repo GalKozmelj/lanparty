@@ -184,7 +184,6 @@ input:-webkit-autofill:active {
 													}
 												 ?>
 										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
-										<tr> <td> <p class="vrsta">Vodja ekipe: <input type="text" name="Vodja" value="" placeholder="ime" style="color: white;" required> <input type="text" name="Vodja" value="" placeholder="priimek" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Email" required> </td><td> <input type="text" name="priimek1" value="" placeholder="telefon" required> </p> </td></tr>
 									</table>
 
 									<hr>
@@ -329,8 +328,7 @@ input:-webkit-autofill:active {
 			<section id="about-us">
 				<div class="container">
 					<div class="theme-title">
-						<h2>O Prijavah</h2>
-            <p>prijave bodo odprte 1.Decembra in bodo potekale dokler se nebodo zapomnila vsa mesta za igralce!</p>
+					
 					</div> <!-- /.theme-title -->
 
 

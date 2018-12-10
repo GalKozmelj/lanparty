@@ -164,7 +164,7 @@ input:-webkit-autofill:active {
 
                     <div class="box" style="margin-top:5%;margin-bottom:8%;">
                       <div class="naslov" style="margin-top:5%;">
-                      <h1>League of Legends</h1>
+                      <h1>League of Legends</h1><h6>server: EUW</h6>
                       </div>
 										</div>
 
@@ -321,8 +321,7 @@ input:-webkit-autofill:active {
 			<section id="about-us">
 				<div class="container">
 					<div class="theme-title">
-						<h2>O Prijavah</h2>
-            <p>prijave bodo odprte 1.Decembra in bodo potekale dokler se nebodo zapomnila vsa mesta za igralce!</p>
+
 					</div> <!-- /.theme-title -->
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
-		
+
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -202,8 +202,7 @@
 			<section id="about-us">
 				<div class="container">
 					<div class="theme-title">
-						<h2>O Prijavah</h2>
-            <p>Prijave bodo odprte 10. decembra in bodo odprte do zapolnitve vseh mest.</p>
+
 					</div> <!-- /.theme-title -->
 
 
