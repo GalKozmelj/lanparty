@@ -5,7 +5,7 @@
 
 				<div class="container">
 
-					<a style="margin-left: 20px;font-size: 40px;color:#FFF;" href="index.html"><b>LAN2<span style="color: #ff0022">K</span>19</b></a>
+					<a style="margin-left: 20px;font-size: 40px;color:#FFF;" href="index.php"><b>LAN2<span style="color: #ff0022">K</span>19</b></a>
 
 					<!-- ========================= Theme Feature Page Menu ======================= -->
 					<nav class="navbar float-right theme-main-menu one-page-menu">

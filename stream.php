@@ -38,11 +38,11 @@
                 include('./header.php');
             ?>
             <div style="padding-top: 100px;">
-                
+
 
             </div>
     <iframe
-        src="https://player.twitch.tv/?channel=dyrus"
+        src="https://player.twitch.tv/?channel=lanpartyvelenje2019"
         width="80%"
         height="750px"
         frameborder="none"
@@ -54,7 +54,7 @@
     <iframe frameborder="0"
         scrolling="no"
         id="chat_embed"
-        src="https://www.twitch.tv/embed/dyrus/chat"
+        src="https://www.twitch.tv/embed/lanpartyvelenje2019/chat"
         height="750"
         width="20%"
         style="float:right; margin-bottom: 10vh">

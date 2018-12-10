@@ -125,10 +125,8 @@
 										data-splitout="none"
 										data-responsive_offset="on">
 
-                    <div class="desc" style="border-left:solid white 3px; padding: 5px; margin:30px;">
-                    <p><span style="color:red">Day1:</span> Counter Strike Global Offensive (18.1.2019, Petek)</p>
-                    <p><span style="color:red">Day2:</span> League of Legends (19.1.2019, Sobota)</p>
-                    </div>
+
+
 									</div>
 
 
