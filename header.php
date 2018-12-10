@@ -20,11 +20,11 @@
 					   <!-- Collect the nav links, forms, and other content for toggling -->
 					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
 					     <ul class="nav navbar-nav" id="navigator">
-					       	<li><a href="/lanparty/index.php">DOMOV</a></li>
-							<li><a href="/lanparty/prijave.php">Prijave</a></li>
-							<li><a href="/lanparty/stream.php">Stream</a></li>
-							<li><a href="/lanparty/rezultati_cs.php">Rezultati</a></li>
-							<li><a href="/lanparty/kontakt.php">Kontakt</a></li>
+					       	<li><a href="/index.php">DOMOV</a></li>
+							<li><a href="/prijave.php">Prijave</a></li>
+							<li><a href="/stream.php">Stream</a></li>
+							<li><a href="/rezultati_cs.php">Rezultati</a></li>
+							<li><a href="/kontakt.php">Kontakt</a></li>
 
 					   </div><!-- /.navbar-collapse -->
 					</nav> <!-- /.theme-feature-menu -->
