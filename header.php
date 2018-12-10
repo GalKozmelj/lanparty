@@ -20,12 +20,12 @@
 					   <!-- Collect the nav links, forms, and other content for toggling -->
 					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
 					     <ul class="nav navbar-nav" id="navigator">
-					       	<li><a href="/index.php">DOMOV</a></li>
-							<li><a href="/prijave.php">Prijave</a></li>
-							<li><a href="/stream.php">Stream</a></li>
-							<li><a href="/rezultati_cs.php">Rezultati-cs</a></li>
-							<li><a href="/rezultati_lol.php">Rezultati-lol</a></li>
-							<li><a href="/kontakt.php">Kontakt/info</a></li>
+					       	<li><a href="./index.php">DOMOV</a></li>
+							<li><a href="./prijave.php">Prijave</a></li>
+							<li><a href="./stream.php">Stream</a></li>
+							<li><a href="./rezultati_cs.php">Rezultati-cs</a></li>
+							<li><a href="./rezultati_lol.php">Rezultati-lol</a></li>
+							<li><a href="./kontakt.php">Kontakt/info</a></li>
 
 					   </div><!-- /.navbar-collapse -->
 					</nav> <!-- /.theme-feature-menu -->
