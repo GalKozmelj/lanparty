@@ -23,7 +23,6 @@
 					       	<li><a href="./index.php">DOMOV</a></li>
 							<li><a href="./prijave.php">Prijave</a></li>
 							<li><a href="./stream.php">Stream</a></li>
-							<li><a href="./rezultati_cs.php">Rezultati</a></li>
 							<li><a href="./kontakt.php">Kontakt/info</a></li>
 
 					   </div><!-- /.navbar-collapse -->

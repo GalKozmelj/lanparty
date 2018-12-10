@@ -189,7 +189,7 @@ input:-webkit-autofill:active {
 
 									<hr>
 
-									<table border="1" style="text-align: center;">
+									<table border="0" style="text-align: center; max-width: 80% !important">
                     <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Steam name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
