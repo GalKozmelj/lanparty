@@ -2,7 +2,7 @@
 	require('./database.php');
 ?>
 <header class="theme-main-header">
-	
+
 				<div class="container">
 
 					<a style="font-size: 40px;color:#FFF;" href="index.html"><b>LAN2<span style="color: #ff0022">K</span>19</b></a>
@@ -23,8 +23,7 @@
 					       	<li><a href="./index.php">DOMOV</a></li>
 							<li><a href="./prijave.php">Prijave</a></li>
 							<li><a href="./stream.php">Stream</a></li>
-							<li><a href="./rezultati_cs.php">Rezultati-cs</a></li>
-							<li><a href="./rezultati_lol.php">Rezultati-lol</a></li>
+							<li><a href="./rezultati_cs.php">Rezultati</a></li>
 							<li><a href="./kontakt.php">Kontakt/info</a></li>
 
 					   </div><!-- /.navbar-collapse -->

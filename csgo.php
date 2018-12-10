@@ -184,12 +184,17 @@ input:-webkit-autofill:active {
 													}
 												 ?>
 										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
-                      <hr>
-                    <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Account name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td> <p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime4" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek4" value="" placeholder="Priimek" required> </p> </td></tr>
-										<tr> <td>	<p class="vrsta">Igralec st.5: <input type="text" name="player5" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime5" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek5" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td> <p class="vrsta">Vodja ekipe: <input type="text" name="Vodja" value="" placeholder="ime" style="color: white;" required> <input type="text" name="Vodja" value="" placeholder="priimek" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Email" required> </td><td> <input type="text" name="priimek1" value="" placeholder="telefon" required> </p> </td></tr>
+									</table>
+
+									<hr>
+
+									<table border="1" style="text-align: center;">
+                    <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Steam name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td> <p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime4" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek4" value="" placeholder="Priimek" required> </p> </td></tr>
+										<tr> <td>	<p class="vrsta">Igralec st.5: <input type="text" name="player5" value="" placeholder="Steam name" required> </td><td> <input type="text" name="ime5" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek5" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr>	<input type="hidden" value="2" name="game_id"/>
                     <tr> <td colspan="3"> <p> <input class="project-button hvr-bounce-to-right pobarvanka" type="submit" name="submit_btn" value="Prijavi"> </p> </td></tr>
 										</table>
