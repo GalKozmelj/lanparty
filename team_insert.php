@@ -64,7 +64,7 @@ foreach ($result as $row) {
   header("Refresh: 0; url=lol.php?id=2");
   }else{
       header("Refresh: 0; url=csgo.php?id=2");
-      
+
   }
   die();
 }
@@ -99,6 +99,7 @@ $query6 = "insert into igralci(ime,priimek,account_name,ekipa_id) values('$ime5'
   ?>
 
 <p style="color:green">Uspesno ste prijavljeni!</p>
+
 
   <?php
 header('Refresh: 0; url=index.php?id=1');

@@ -49,7 +49,7 @@ input[type=text]{
   border-bottom: 1px #bbb solid !important;
   padding: 2px;
   margin: 5px;
-  margin-bottom: 0px;
+  	margin-bottom: 0px;
 }
 .pobarvanka:hover{
     background-color: #d73e4d;
@@ -167,6 +167,16 @@ input:-webkit-autofill:active {
                       <h1>League of Legends</h1><h6>server: EUW</h6>
                       </div>
 										</div>
+										<?php
+											$query = "SELECT * FROM ekipa WHERE game = 1";
+											$result = mysqli_query($link, $query);
+												$i = 0;
+											foreach ($result as $row) {
+												$i++;
+											}
+											if($i < 8){
+
+										 ?>
 
                     <form class="forma" action="team_insert.php" method="post">
                       <table border="0" style="text-align: center;">
@@ -182,7 +192,7 @@ input:-webkit-autofill:active {
 												 ?>
 										<tr> <td colspan="3"> <p>Ime ekipe: <input style="margin-bottom: 20px;" type="text" name="ime_ekipe" value="" placeholder="Ime ekipe"></p>
                       <hr>
-                    <tr> <td> <p class="vrsta">Igralec st.1: <input type="text" name="player1" value="" placeholder="Account name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
+                    <tr> <td> <p class="vrsta">Igralec st.1 (vodja): <input type="text" name="player1" value="" placeholder="Account name" style="color: white;" required> </td><td> <input type="text" name="ime1" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek1" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr> <td> <p class="vrsta">Igralec st.2: <input type="text" name="player2" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime2" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek2" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr> <td>	<p class="vrsta">Igralec st.3: <input type="text" name="player3" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime3" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek3" value="" placeholder="Priimek" required> </p> </td></tr>
 										<tr> <td> <p class="vrsta">Igralec st.4: <input type="text" name="player4" value="" placeholder="Account name" required> </td><td> <input type="text" name="ime4" value="" placeholder="Ime" required> </td><td> <input type="text" name="priimek4" value="" placeholder="Priimek" required> </p> </td></tr>
@@ -195,7 +205,15 @@ input:-webkit-autofill:active {
 
 
 
+										<?php
+										}else{
 
+										?>
+										<h1 style="color: red;">Prijava ni več mogoča</h1>
+										<?php
+
+										}
+										 ?>
 
 									</div>
 

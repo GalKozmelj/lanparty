@@ -105,6 +105,8 @@
                     <div class="desc" style="border-left:solid white 3px; padding: 5px; margin-top:30px;">
                     <p><span style="color:red">Day1:</span> Counter Strike Global Offensive (18.1.2019, Petek)</p>
                     <p><span style="color:red">Day2:</span> League of Legends (19.1.2019, Sobota)</p>
+                    <br>
+                    <b style="color:white">Gmail: LanParty.Velenje@gmail.com</b>
                     </div>
 
 									</div>

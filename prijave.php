@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
@@ -42,6 +44,7 @@
 			-->
 			<?php
 				include('./header.php');
+
 			?>
 
 
@@ -119,8 +122,9 @@
 										data-splitin="none"
 										data-splitout="none"
 										data-responsive_offset="on">
-										<a style="padding: 10px;border-color:black;font-weight:bold;font-size:40px;background:black;" href="lol.php" class="project-button hvr-bounce-to-right">LOL</a>
-                    <a style="padding: 10px;border-color:black;font-weight:bold;font-size:40px;background:black;" href="csgo.php" class="project-button hvr-bounce-to-right">CS:GO</a>
+										<br>
+										<a style="padding: 10px;border-color:black;font-weight:bold;font-size:40px;background:;" href="lol.php" class="project-button hvr-bounce-to-right">LOL</a>
+                    <a style="padding: 10px;border-color:black;font-weight:bold;font-size:40px;background:;" href="csgo.php" class="project-button hvr-bounce-to-right">CS:GO</a>
 
 									</div>
 
@@ -192,9 +196,52 @@
 					</div><!-- END REVOLUTION SLIDER -->
 	        </div> <!--  /#banner -->
 
+	<h1 class="container" style="width: 100%; text-align: center; margin-top: 5%;">Prijavljene ekipe</h1>
+
+				<table border="0" style="float: left; margin-top: 8%; margin-bottom: 10%; margin-left: 20%; padding: 5px;">
+					<tr>
+						<th><h3>CS:GO</h3></th>
+					</tr>
+					<?php
+							$query = "SELECT * FROM ekipa WHERE game = 2";
+							$result = mysqli_query($link, $query);
 
 
-	        <!--
+							$i = 0;
+							foreach($result as $row) {
+								$i++;
+
+								echo "<tr><th style='padding: 2px; border-bottom: 1px solid #aaa'>". $i. ". ". $row['ime']."</th></tr>";
+																			}
+						?>
+
+
+
+
+				</table>
+				<table border="0" style="float: right; margin-top: 8%; margin-bottom: 10%; margin-right: 20%;">
+					<tr>
+						<th><h3>LOL</h3></th>
+					</tr>
+					<?php
+							$query = "SELECT * FROM ekipa WHERE game = 1";
+							$result = mysqli_query($link, $query);
+
+
+							$i = 0;
+							foreach($result as $row) {
+								$i++;
+								echo "<tr><th style='padding: 2px; border-bottom: 1px solid #aaa'>". $i. ". ". $row['ime']."</th></tr>";
+																			}
+						?>
+
+
+
+
+				</table>
+
+
+ 	        <!--
 			=====================================================
 				About us Section
 			=====================================================

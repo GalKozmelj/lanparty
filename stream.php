@@ -37,7 +37,7 @@
             <?php
                 include('./header.php');
             ?>
-            <div style="padding-top: 100px;">
+            <div style="padding-top: 150px;">
 
 
             </div>
@@ -53,7 +53,6 @@
 
     <iframe frameborder="0"
         scrolling="no"
-        id="chat_embed"
         src="https://www.twitch.tv/embed/lanpartyvelenje2019/chat"
         height="750"
         width="20%"
@@ -62,4 +61,5 @@
 
 
 </body>
+
 </html>

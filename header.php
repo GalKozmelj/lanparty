@@ -1,6 +1,7 @@
 <?php
 	require('./database.php');
 ?>
+
 <header class="theme-main-header">
 
 				<div class="container">
@@ -21,7 +22,22 @@
 					   <div class="collapse navbar-collapse" id="navbar-collapse-1">
 					     <ul class="nav navbar-nav" id="navigator">
 					       	<li><a href="./index.php">DOMOV</a></li>
+									<?php
+										$query = "SELECT * FROM ekipa";
+										$result = mysqli_query($link, $query);
+											$i = 0;
+										foreach ($result as $row) {
+											$i++;
+										}
+										if($i < 16){
+
+									 ?>
 							<li><a href="./prijave.php">Prijave</a></li>
+
+							<?php
+						}
+							 ?>
+
 							<li><a href="./stream.php">Stream</a></li>
 							<li><a href="./kontakt.php">Kontakt/info</a></li>
 

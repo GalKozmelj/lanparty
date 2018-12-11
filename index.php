@@ -195,13 +195,21 @@
 				About us Section
 			=====================================================
 			-->
+
+			<div class="lol" style=" width: 100%; text-align: center; margin-top:50px;">
+
+				<img src="images/redbull.png" style=" margin-left: auto; margin-right: auto; display: block;"  alt="redbull">
+			</div>
+
+
 			<section id="about-us">
 				<div class="container">
 					<div class="theme-title">
 						<h2>O dogodku</h2>
-						<p>Smo ekipa dijakov, ki pripravljamo dogodek LanParty, na katerem bomo igrali naslednji dve igri. Prvi dan bomo igrali <span style="color:red">CS:GO</span>(18.1.2019) in drugi dan bomo igrali
-							 <span style="color:red">League of Legends</span>(19.1.2019) Dogodek se bo odvijal oba dneva v dvorani Gaudeamus Velenje <b style="color:red">VSTOPNINE NI!</b></p>
+						<p>Smo ekipa dijakov, ki pripravljamo dogodek LanParty, na katerem bomo igrali naslednji dve igri. Prvi dan bomo igrali <span style="color:red">CS:GO</span>(18.1.2019, 16:30) in drugi dan bomo igrali
+							 <span style="color:red">League of Legends</span>(19.1.2019, 10:00) Dogodek se bo odvijal oba dneva v dvorani Gaudeamus Velenje <b style="color:red">VSTOPNINE NI!</b></p>
 					</div><br> <br><br><!-- /.theme-title -->
+
 
 
 
